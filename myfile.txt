@@ -1,6 +1,2 @@
 Hello, this is the repository of Jhenina Sta. Cruz
-<<<<<<< HEAD
-Completed my first commit and push.
-=======
-Completed my first commit and push.
->>>>>>> c98a435097bce72afef9a8bcb8693fbe7c447e29
+Cute ni Katrina Umayao
