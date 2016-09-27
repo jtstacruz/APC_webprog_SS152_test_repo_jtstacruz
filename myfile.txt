@@ -1,1 +1,2 @@
 Hello, this is the repository of Jhenina Sta. Cruz
+Completed my first commit and push.
