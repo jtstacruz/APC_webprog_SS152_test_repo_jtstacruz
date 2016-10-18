@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script language="javascript" type="text/javascript">
+alert("About ME!")
+</script>
+
+<script LANGUAGE="JavaScript">
+
+  
+var messages = new Array(6); 
+messages[0] = "";
+messages[1] = "Lucky Blue Smith";
+messages[2] = "Blue-- especially navy and tiffany blue";	   
+messages[3] = "My best friends are dane and therese <3";
+messages[4] = "My favorite genre is EDM! Nothing beats classic trap style and house electro.";
+messages[5] = "My favorite book is looking for alaska by John Green.";
+function messageReveal() {
+var messageindex = document.messageForm.messagePick.selectedIndex
+document.messageForm.messageField.value = messages[messageindex];
+}
+
+</script>
 
 </head>
 
@@ -39,6 +59,7 @@
 			text-align: center;
 			text-decoration: none;
 			display: inline-block;
+			font-family: georgia;
 		}
 		a:hover, a:active {
 			background-color: black;
@@ -70,15 +91,15 @@
 		<center>
 			<a href="aboutme.html">About Me</a>
 			<a href="mypassion.html">My Passions</a>
-			<a href="#hobbies">My Hobbies </a>
-			<a href="#trivia">Trivias</a>
+			<a href="myhobbies.html">My Hobbies </a>
+			<a href="trivias.html">Trivias</a>
 			<a href="form.html">PHP Form</a>
 		</center>
 	<br>
 	<br>
 	
 	<center>
-	<div class="city"> 
+	<div class="city" id="aboutme"> 
 		<u> <h2 style="font-family: century; font-size:35px; color:black; text align: center">ABOUT ME </h2> </u>
 			<img src="selfie.jpg" width="250" height="250" alt="Jhenina"> <img src="city.jpg" width="250" height="250" alt="Jhenina"> 
 	<br>

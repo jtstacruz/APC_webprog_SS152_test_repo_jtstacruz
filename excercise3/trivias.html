@@ -2,7 +2,7 @@
 <html>
 <head>
 <script language="javascript" type="text/javascript">
-alert("My Passions!")
+alert("TRIVIAAS!")
 </script>
 
 <script LANGUAGE="JavaScript">
@@ -99,20 +99,55 @@ document.messageForm.messageField.value = messages[messageindex];
 	<br>
 	
 	<center>
+	<div class="city" id="trivia">
+	<u> <h2 style="font-family: century; font-size:35px; color:black; text align: center">TRIVIAS </h2> </u>
 	
-	<div class="city" id="passions">
-	  <u> <h2 style="font-family: century; font-size:35px; color:black; text align: center">MY PASSIONS </h2> </u>
-		  <br> <img src="books.jpg" width="250" height="250" alt="Jhenina"> <img src="ootd.jpg" width="250" height="250" alt="Jhenina"> 
-		  <img src="van.jpg" width="250" height="250" alt="Jhenina">
-	  </br>
-	  
-	  <br> 
-	  <i> <p> <strong>Writing, poetry, photography, and styling </strong></p> </i>
-	  <p> Whenever I engage into these passions, it feeds my soul. 
-		It makes me happier than ever. With writing, I am able to express myself and my emotions through poetry. And with that I believe that
-		every photo tells a story. So with every capture I take, there is a bliss of emotion behind it. With styling, it makes me feel better
-		since I own a clothing line, fashion is a prerequisite. It's like forming something simple to art. These passions expanded my way
-		of thinking and enhanced my creativity. </h2> </p> </br>
-	<a href="http://www.instagram.com/jhxnina" target="_blank">MY PHOTOGRAPHY</a>		
+	<body>
+
+		<center>
+		<form name="messageForm">
+			<p><select name="messagePick" OnChange="messageReveal()">
+				<option value="0">The Menu Message</option>
+				<option>My Model Crush</option>
+				<option>My Favorite Colour</option>
+				<option>My Bestest Friends</option>
+				<option>My Favorite Genre</option>
+				<option>My Favorite Book</option>
+		</select> <br>
+  </p>
+  <p><textarea name="messageField" rows="5" cols="41" wrap="virtual"></textarea></p>
+</form>
+</center>
+</body>
+
+	<br>
+
+	<p id="demo">My Role Model</p>
+
+		<button type="button" onclick="document.getElementById('demo').innerHTML = 'Audrey Hepburn'">Click Me!</button>
 	
-	</div>
+	</br>
+	<br>
+
+	<p id="demo1">My Secret Talent</p>
+
+			<button type="button2" onclick="document.getElementById('demo1').innerHTML = 'Rapping with guitar'">Click Me!</button>
+
+	</br>
+	<br>
+	
+	<p id="demo2">My Most Embarrasing Moment </p>
+
+			<button type="button" onclick="document.getElementById('demo2').innerHTML = 'Farting infront of my crush'">Click Me!</button>
+	
+	</br>
+	<br>
+	
+	<p id="demo3">My Terrible Weakness </p>
+
+			<button type="button" onclick="document.getElementById('demo3').innerHTML = 'Food'">Click Me!</button>
+
+	</br>
+	</body>
+	</center>
+	</html>
