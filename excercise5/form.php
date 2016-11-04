@@ -1,3 +1,27 @@
+<?php
+include_once 'dbconfig.php';
+if(isset($_POST['btn-save']))
+{
+ // variables for input data
+ $name = $_POST['name'];
+ $email = $_POST['email'];
+ $website = $_POST['website'];
+ $comment = $_POST['comment'];
+ $gender = $_POST['gender'];
+ 
+ // variables for input data
+ 
+ // sql query for inserting data into database
+ 
+        $sql_query = "INSERT INTO users(name,email,website,comment,gender) VALUES('$first_name','$last_name','$city_name')";
+ mysql_query($sql_query);
+        
+        // sql query for inserting data into database
+ 
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
