@@ -77,7 +77,7 @@ table td input{
 
 <div id="header">
  <div id="content">
-    <label> Form Inputs </label>
+    
     </div>
 </div>
 
@@ -85,7 +85,7 @@ table td input{
  <div id="content">
     <table align="center">
     <tr>
-    <th colspan="5"><a href="form.php">add data here.</a></th>
+    <th colspan="5"><a href="form.php">-Add data here-</a></th>
     </tr>
     <th>Name</th>
     <th>Email</th>
