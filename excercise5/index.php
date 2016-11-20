@@ -37,7 +37,7 @@ function delete_id(id)
 
 body{
 
-  background-image: url("Background3.jpg");
+  background-image: url("gray.gif");
   opacity: 1.5;
 }
 table{

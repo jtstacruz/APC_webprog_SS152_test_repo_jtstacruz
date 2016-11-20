@@ -99,7 +99,7 @@ if(isset($_POST['btn-cancel']))
 <style>
 
 body{
-  background-image: url("Background3.jpg");
+  background-image: url("gray.gif");
   opacity: 1.5;
 }
 .box{
