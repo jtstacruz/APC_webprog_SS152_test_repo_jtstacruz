@@ -91,9 +91,9 @@ document.messageForm.messageField.value = messages[messageindex];
 		<center>
 			<a href="aboutme.php">About Me</a>
 			<a href="mypassion.php">My Passions</a>
-			<a href="myhobbies.html">My Hobbies </a>
-			<a href="trivias.html">Trivias</a>
-			<a href="form.html">PHP Form</a>
+			<a href="myhobbies.php">My Hobbies </a>
+			<a href="trivias.php">Trivias</a>
+			<a href="form.php">PHP Form</a>
 		</center>
 	<br>
 	<br>

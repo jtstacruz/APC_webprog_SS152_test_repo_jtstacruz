@@ -33,6 +33,44 @@ function delete_id(id)
  }
 }
 </script>
+<style>
+
+body{
+
+  background-image: url("Background3.jpg");
+  opacity: 1.5;
+}
+table{
+    background-color: #EEE7DA;
+    box-shadow: 1px 1px 20px #272532;
+    border-radius: 5px;
+    font-family: helvetica;
+    width:90%;
+    color:#6F5F5C;
+    margin-bottom:80px;
+}
+table a{
+ text-decoration:none;
+ color:#5B5552;
+}
+table,td,th{
+ border-collapse:collapse;
+ border:solid #d0d0d0 1px;
+ padding:20px;
+}
+table td input{
+ width:97%;
+ height:35px;
+ border:dashed #00a2d1 1px;
+ padding-left:15px;
+ font-family:Verdana, Geneva, sans-serif;
+ box-shadow:0px 0px 0px rgba(1,0,0,0.2);
+ outline:none;
+}
+#add_data:hover{
+    background-color: #d6cfc4;
+}
+</style>
 </head>
 <body>
 <center>
