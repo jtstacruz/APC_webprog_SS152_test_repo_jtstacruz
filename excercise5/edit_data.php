@@ -96,6 +96,65 @@ if(isset($_POST['btn-cancel']))
 <title>CRUD Operations With PHP and MySql - By Cleartuts</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
+<style>
+
+body{
+  background-image: url("Background3.jpg");
+  opacity: 1.5;
+}
+.box{
+  position: absolute;
+  left: 30%;
+  margin-top: 20px;
+  background-color: #EEE7DA;
+  
+  border-radius: 5px;
+  font-family: helvetica;
+  width: 500px;
+  height: 600px;
+}
+.error {color: #FF0000;}
+h2{
+  text-align: center;
+}
+textarea{
+  width: 200px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+p, form{
+  padding-left: 50px;
+  padding-right: 60px;
+  color: #5B5552;
+}
+#formValid{
+  color: #5B5552;
+}
+input{
+  margin-left: 25px;
+}
+#submit{
+  position: absolute;
+  margin-left: 210px;
+}
+input[type=text], select {
+  width: 200px;
+  height: 35px;
+  padding: 12px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+</style>
 <body>
 <center>
 
