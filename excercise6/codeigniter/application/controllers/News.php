@@ -10,26 +10,14 @@ class Users extends CI_Controller {
  
     public function index()
     {
-        $data['user_list'] = $this->news_model->get_news();
+        $data['user_list'] = $this->news_model->get_all_users();
 		$this->load->view('view_records', $data);
         
     }
  
-    public function view($slug = NULL)
-    {
-        $data['news_item'] = $this->news_model->get_news($slug);
-        
-        if (empty($data['news_item']))
-        {
-            show_404();
-        }
- 
-        $data['title'] = $data['news_item']['title'];
- 
-        $this->load->view('templates/header', $data);
-        $this->load->view('news/view', $data);
-        $this->load->view('templates/footer');
-    }
+    public function add_form(){
+		$this->load->view('insert.php')
+	}
     
     public function create()
     {
