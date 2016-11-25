@@ -10,12 +10,9 @@ class Users extends CI_Controller {
  
     public function index()
     {
-        $data['news'] = $this->news_model->get_news();
-        $data['title'] = 'News archive';
- 
-        $this->load->view('templates/header', $data);
-        $this->load->view('news/index', $data);
-        $this->load->view('templates/footer');
+        $data['user_list'] = $this->news_model->get_news();
+		$this->load->view('view_records', $data);
+        
     }
  
     public function view($slug = NULL)
