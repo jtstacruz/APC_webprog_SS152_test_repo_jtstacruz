@@ -1,11 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class News extends CI_Controller {
+class Users extends CI_Controller {
  
-    public function __construct()
+    function __construct()
     {
         parent::__construct();
-        $this->load->model('news_model');
-        $this->load->helper('url_helper');
+        $this->load->model('users_model');
+        $this->load->helper('url');
     }
  
     public function index()
