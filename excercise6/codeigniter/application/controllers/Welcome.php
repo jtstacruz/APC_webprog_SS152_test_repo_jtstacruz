@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('aboutme.php');
+		$this->load->view('trivias.php');
 		$this->load->view('html');
 	}
 }
