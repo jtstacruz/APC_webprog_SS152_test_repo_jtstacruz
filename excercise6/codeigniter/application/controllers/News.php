@@ -19,77 +19,41 @@ class Users extends CI_Controller {
 		$this->load->view('insert.php')
 	}
     
-    public function create()
+    public function insert_user_db()
     {
-        $this->load->helper('form');
-        $this->load->library('form_validation');
- 
-        $data['title'] = 'Create a news item';
- 
-        $this->form_validation->set_rules('title', 'Title', 'required');
-        $this->form_validation->set_rules('text', 'Text', 'required');
- 
-        if ($this->form_validation->run() === FALSE)
-        {
-            $this->load->view('templates/header', $data);
-            $this->load->view('news/create');
-            $this->load->view('templates/footer');
- 
-        }
-        else
-        {
-            $this->news_model->set_news();
-            $this->load->view('templates/header', $data);
-            $this->load->view('news/success');
-            $this->load->view('templates/footer');
-        }
+    $udata['name'] = $this->input->post('name');
+    $udata['email'] = $this->input->post('email');
+    $udata['website'] = $this->input->post('website');
+    $udata['comment'] = $this->input->post('comment');
+    $udata['gender'] = $this->input->post('gender');
+    $res = $this->users_model->insert_users_to_db($udata);
+    if($res){
+      header('location:'.base_url()."index.php/users/".$this->index());
     }
+  }
+  // OPEN EDIT FORM WITH DATA
+  function show_users_id() {
+    $id = $this->uri->segment(3);
+    $data['users'] = $this->users_model->show_users();
+    $data['single_users'] = $this->users_model->show_users_id($id);
+    $this->load->view('view_edit', $data);
+  }
+  function update_users_id1() {
+    $id= $this->input->post('did');
+    $data = array(
+    'name' => $this->input->post('name'),
+    'email' => $this->input->post('email'),
+    'website' => $this->input->post('website'),
+    'comment' => $this->input->post('comment'),
+    'gender' => $this->input->post('gender'),
     
-    public function edit()
-    {
-        $id = $this->uri->segment(3);
-        
-        if (empty($id))
-        {
-            show_404();
-        }
-        
-        $this->load->helper('form');
-        $this->load->library('form_validation');
-        
-        $data['title'] = 'Edit a news item';        
-        $data['news_item'] = $this->news_model->get_news_by_id($id);
-        
-        $this->form_validation->set_rules('title', 'Title', 'required');
-        $this->form_validation->set_rules('text', 'Text', 'required');
- 
-        if ($this->form_validation->run() === FALSE)
-        {
-            $this->load->view('templates/header', $data);
-            $this->load->view('news/edit', $data);
-            $this->load->view('templates/footer');
- 
-        }
-        else
-        {
-            $this->news_model->set_news($id);
-            //$this->load->view('news/success');
-            redirect( base_url() . 'index.php/news');
-        }
-    }
-    
-    public function delete()
-    {
-        $id = $this->uri->segment(3);
-        
-        if (empty($id))
-        {
-            show_404();
-        }
-                
-        $news_item = $this->news_model->get_news_by_id($id);
-        
-        $this->news_model->delete_news($id);        
-        redirect( base_url() . 'index.php/news');        
-    }
+    );
+    $this->users_model->update_users_id1($id, $data);
+    $this->show_users_id();
+    $this->load->helper('url');
+    redirect('index.php/users/index', 'refresh');
+  }
+  public function delete($user_id){
+    $this->users_model->delete_a_user($user_id);
+  }
 }
