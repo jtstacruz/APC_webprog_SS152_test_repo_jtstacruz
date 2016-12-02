@@ -1,7 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Home extends CI_Controller {
+
+class MyPassion extends CI_Controller {
 	public function index(){
-		$this->load->view('aboutme.php'); 
+		$this->load->view('mypassion.php'); 
 		$this->load->helper('html');
 	}
 
