@@ -16,7 +16,7 @@ class Users extends CI_Controller {
     }
  
     public function add_form(){
-		$this->load->view('insert.php')
+		$this->load->view('insert.php');
 	}
     
     public function insert_user_db()
