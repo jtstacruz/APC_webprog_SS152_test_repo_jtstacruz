@@ -160,10 +160,10 @@ document.messageForm.messageField.value = messages[messageindex];
 	
 	<body>
 		<center>
-			<a href="aboutme.php">About Me</a>
-			<a href="mypassion.php">My Passions</a>
-			<a href="myhobbies.php">My Hobbies </a>
-			<a href="trivias.php">Trivias</a>
+			<a href="<?php echo base_url('index.php/AboutMe/index')?>"> About Me</a>
+			<a href="<?php echo base_url('index.php/MyPassion/index')?>"> My Passions</a>
+			<a href="<?php echo base_url('index.php/MyHobbies/index')?>"> My Hobbies </a>
+			<a href="<?php echo base_url('index.php/MyTrivias/index')?>"> Trivias</a>
 			<a href="form.php">PHP Form</a>
 		</center>
 	<br>
