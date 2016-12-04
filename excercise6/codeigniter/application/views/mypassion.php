@@ -81,7 +81,7 @@ document.messageForm.messageField.value = messages[messageindex];
 	</style>
 		<head>
 			<center>
-				<img src="finalheader.png">
+				<img class="p_absolute" src="<?php echo base_url();?>/images/finalheader.png" width="720px" height="140px" style="border-top-left-radius: 15px; border-top-right-radius: 10px;">
 			</center>
 		</head>
 	<br>
@@ -102,8 +102,8 @@ document.messageForm.messageField.value = messages[messageindex];
 	
 	<div class="city" id="passions">
 	  <u> <h2 style="font-family: century; font-size:35px; color:black; text align: center">MY PASSIONS </h2> </u>
-		  <br> <img src="books.jpg" width="250" height="250" alt="Jhenina"> <img src="ootd.jpg" width="250" height="250" alt="Jhenina"> 
-		  <img src="van.jpg" width="250" height="250" alt="Jhenina">
+		  <br> <img class="p_absolute" src="<?php echo base_url();?>/images/books.jpg" width="720px" height="140px" style="border-top-left-radius: 15px; border-top-right-radius: 10px;">
+		  <img class="p_absolute" src="<?php echo base_url();?>/images/van.jpg" width="720px" height="140px" style="border-top-left-radius: 15px; border-top-right-radius: 10px;">
 	  </br>
 	  
 	  <br> 
