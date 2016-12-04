@@ -81,7 +81,7 @@ document.messageForm.messageField.value = messages[messageindex];
 	</style>
 		<head>
 			<center>
-				<img src="finalheader.png">
+				<img class="p_absolute" src="<?php echo base_url();?>/images/finalheader.png" width="720px" height="140px" style="border-top-left-radius: 15px; border-top-right-radius: 10px;">
 			</center>
 		</head>
 	<br>
@@ -103,8 +103,8 @@ document.messageForm.messageField.value = messages[messageindex];
 	<div class="city" id="hobbies">
 	  <u> <h2 style="font-family: century; font-size:35px; color:black; text align: center">MY HOBBIES </h2> </u>
 	<br> 
-		  <img src="books2.jpg" width="250" height="250" alt="Jhenina"> <img src="guitar.jpg" width="250" height="250" alt="Jhenina"> 
-		  <img src="badminton.jpg" width="250" height="250" alt="Jhenina">
+		  <img class="p_absolute" src="<?php echo base_url();?>/images/books2.jpg" width="720px" height="140px" style="border-top-left-radius: 15px; border-top-right-radius: 10px;"> 
+		  <img class="p_absolute" src="<?php echo base_url();?>/images/badminton.jpg" width="720px" height="140px" style="border-top-left-radius: 15px; border-top-right-radius: 10px;">
 	<br>
 		<i> <p> <strong>Playing the guitar and drums, fitness aka badminton, reading books</strong></p> </i>
 	  
