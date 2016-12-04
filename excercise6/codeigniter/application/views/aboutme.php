@@ -65,7 +65,7 @@ alert("About ME!")
 	</style>
 		<head>
 			<center>
-				<img src="finalheader.png">
+			<img class="p_absolute" src="<?php echo base_url();?>/images/finalheader.png" width="720px" height="140px" style="border-top-left-radius: 15px; border-top-right-radius: 10px;">
 			</center>
 		</head>
 	<br>
