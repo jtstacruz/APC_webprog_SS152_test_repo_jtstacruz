@@ -102,12 +102,13 @@ document.messageForm.messageField.value = messages[messageindex];
 
 
 <div class= "form">
-<h2>Form Validation</h2>
+<h2>Form Validation </h2>
 <p><span class="error">* required field.</span></p>
-<form method="post">  
+<form method="post" action="<?php echo base_url();?>index.php/users/insert_user_db">  
 	<table align= "center">
 		<tr align = "center">
-			<td><a href = "index.php"> Back to Main Page </a></td>
+			<td>
+			<a href = "index.php"> Back to Main Page </a></td>
 		</tr>
 		
 		
