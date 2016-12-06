@@ -18,6 +18,7 @@ function show_confirm(act, gotoid){
         window.location="<?php echo base_url();?>index.php/users/"+act+"/"+gotoid;
  }
 }
+
 </script>
 <style>
 
@@ -80,26 +81,26 @@ table td input{
 	<th>Gender</th>
     <th colspan="2">Operations</th>
     </tr>
-    <?php
- $sql_query="SELECT * FROM users";
- $result_set=mysql_query($sql_query);
- while($row=mysql_fetch_row($result_set))
- {
-  ?>
-        <tr>
-        <td><?php echo $row[1]; ?></td>
-        <td><?php echo $row[2]; ?></td>
-        <td><?php echo $row[3]; ?></td>
-		<td><?php echo $row[4]; ?></td>
-        <td><?php echo $row[5]; ?></td>
-  <td align="center"><a href="javascript:edt_id('<?php echo $row[0]; ?>')"><img src="b_edit.png" align="EDIT" /></a></td>
-        <td align="center"><a href="javascript:delete_id('<?php echo $row[0]; ?>')"><img src="b_drop.png" align="DELETE" /></a></td>
+    
+	<?php foreach ($user_list as $u_key){ ?>
+       
+	   <tr>
+        <td><?php echo $u_key->name; ?></td>
+        <td><?php echo $u_key->email; ?></td>
+        <td><?php echo $u_key->website; ?></td>
+        <td><?php echo $u_key->comment; ?></td>
+        <td><?php echo $u_key->gender; ?></td>
+  
+		 <td align="center"><a href="<?php echo base_url() . "index.php/users/show_users_id/" . $u_key->user_id; ?>" onClick="show_confirm('edit',<?php echo $u_key->user_id;?>)"><img src="<?php echo base_url();?>/images/b_edit.png" style="width: 20px"></img></a></td>
+        
+
+        <td align="center"><a href="#" onClick="show_confirm('delete',<?php echo $u_key->user_id;?>)"><img src="<?php echo base_url();?>/images/b_drop.png"></img></a></td>
+        
         </tr>
-        <?php
- }
- ?>
+
+        <?php }?>
     </table>
-    </div>
+  </div>
 </div>
 
 </center>
