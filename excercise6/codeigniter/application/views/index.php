@@ -1,35 +1,21 @@
-<?php
-include_once 'dbconfig.php';
-
-// delete condition
-if(isset($_GET['delete_id']))
-{
- $sql_query="DELETE FROM users WHERE user_id=".$_GET['delete_id'];
- mysql_query($sql_query);
- header("Location: $_SERVER[PHP_SELF]");
-}
-// delete condition
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title> Jhenina's Website </title>
-<link rel="stylesheet" href="style.css" type="text/css" />
+
+<title> Form Validation  </title>
+
 <script type="text/javascript">
-function edt_id(id)
-{
- if(confirm('Sure to edit ?'))
- {
-  window.location.href='edit_data.php?edit_id='+id;
- }
-}
-function delete_id(id)
-{
- if(confirm('Sure to Delete ?'))
- {
-  window.location.href='index.php?delete_id='+id;
+
+function show_confirm(act, gotoid){
+
+  if(act == "edit"){
+        var r = confirm("Do you really want to edit?")
+    }
+    else{
+        var r = confirm("Do you really want to delete?")
+    }
+    if(r == true){
+        window.location="<?php echo base_url();?>index.php/users/"+act+"/"+gotoid;
  }
 }
 </script>
