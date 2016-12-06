@@ -129,7 +129,7 @@ document.messageForm.messageField.value = messages[messageindex];
 		
 		<tr>
           <td>
-            <input type="text" name="website" placeholder = "Website" value="<?php echo $website;?>">
+            <input type="text" name="website" placeholder = "Website" required>
 			<span class="error"> <br></span>
           </td>
         </tr>
