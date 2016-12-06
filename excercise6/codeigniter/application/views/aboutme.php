@@ -13,7 +13,6 @@ alert("About ME!")
 
 	<style>
 		body {
-			background-image: url("white.png");
 			background-color: white;
 		}
 		h1 {
@@ -63,6 +62,8 @@ alert("About ME!")
 		}
 	}
 	</style>
+	<style>
+	<body background="<?php echo base_url();?>/images/white.png"> 
 		<head>
 			<center>
 			<img class="p_absolute" src="<?php echo base_url();?>/images/finalheader.png" width="720px" height="140px" style="border-top-left-radius: 15px; border-top-right-radius: 10px;">
@@ -70,7 +71,7 @@ alert("About ME!")
 		</head>
 	<br>
 	<br>
-	
+	</style>
 	<body>
 		<center>
 			<a href="aboutme.php">About Me</a>

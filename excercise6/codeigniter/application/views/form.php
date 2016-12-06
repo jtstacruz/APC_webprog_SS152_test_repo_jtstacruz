@@ -1,82 +1,9 @@
-<?php
-include_once 'dbconfig.php';
-
-$Error = $nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
-
-
-if(isset($_POST['submit'])){
-  
-    $name = test_input($_POST["name"]);
-    
-    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed"; 
-	  $Error = "Error";
-    }
-  
-  
-
-    $email = test_input($_POST["email"]);
-   
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format"; 
-	  $Error = "Error";
-    }
-  
-    
-    $website = test_input($_POST["website"]);
-    
-    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-      $websiteErr = "Invalid URL"; 
-	  $Error = "Error";
-    }
-  
-
-  
-    if (empty($_POST["comment"])) {    
-      $comment = "";    
-    } else {    
-      $comment = test_input($_POST["comment"]);   
-    }
-  
-
-    if (empty($_POST["gender"])) {   
-      $genderErr = "Input gender";  
-      $Error = "Error";    
-    } else {    
-      $gender = test_input($_POST["gender"]);   
-    }
-
- // sql query for inserting data into database
-	if ($Error != "Error"){
-        $sql_query = "INSERT INTO users(name,email,website,comment,gender) VALUES('$name','$email','$website','$comment','$gender')";
-		mysql_query($sql_query);
-	}
-        
-        // sql query for inserting data into database
- 
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-
-
-?>
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
 <script language="javascript" type="text/javascript">
 alert("Welcome to Jhenina's Amazing Website!")
-
+<title> Form </title>
 </script>
 
 <script LANGUAGE="JavaScript">
@@ -174,8 +101,8 @@ document.messageForm.messageField.value = messages[messageindex];
 		<br>
 
 
-<div>
-<h2>Fill up the form!</h2>
+<div class= "form">
+<h2>Form Validation</h2>
 <p><span class="error">* required field.</span></p>
 <form method="post">  
 	<table align= "center">
@@ -228,21 +155,5 @@ document.messageForm.messageField.value = messages[messageindex];
       </table> 
 </form>
 </div>
-
-<br>
-<?php
-echo "<h2>Your Input:</h2><br>";
-echo $name;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $website;
-echo "<br>";
-echo $comment;
-echo "<br>";
-echo $gender;
-?>
-
-</center>
 </body>
 </html>
