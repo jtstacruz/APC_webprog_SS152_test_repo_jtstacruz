@@ -115,28 +115,28 @@ document.messageForm.messageField.value = messages[messageindex];
 	
 		<tr>
 			<td>
-				<input type="text" name="name" placeholder = "Name" value="<?php echo $name;?>">
-				<span class="error">* <?php echo $nameErr;?></span>
+				<input type="text" name="name" placeholder = "Name" required">
+				<span class="error">* <br></span>
 			</td>
 		</tr>
 		
 		<tr>
           <td>
-            <input type="text" name="email" placeholder = "E-mail" value="<?php echo $email;?>">
-				<span class="error">* <?php echo $emailErr;?></span>
+            <input type="text" name="email" placeholder = "E-mail" placeholder="Email" required>
+				<span class="error">* <br></span>
           </td>
         </tr>
 		
 		<tr>
           <td>
             <input type="text" name="website" placeholder = "Website" value="<?php echo $website;?>">
-			<span class="error"><?php echo $websiteErr;?></span>
+			<span class="error"> <br></span>
           </td>
         </tr>
 		
 		<tr>
           <td>
-            <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+            <textarea name="comment" rows="5" cols="40"> </textarea>
           </td>
         </tr>
 		
@@ -145,7 +145,7 @@ document.messageForm.messageField.value = messages[messageindex];
 				Gender: 
 				<input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
 				<input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-				<span class="error">* <?php echo $genderErr;?></span> 
+				<span class="error">* <br></span> 
 			</td>
 		</tr>
 		
