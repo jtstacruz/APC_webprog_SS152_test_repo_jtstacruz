@@ -102,8 +102,8 @@ document.messageForm.messageField.value = messages[messageindex];
 	
 	<div class="city" id="passions">
 	  <u> <h2 style="font-family: century; font-size:35px; color:black; text align: center">MY PASSIONS </h2> </u>
-		  <br> <img class="p_absolute" src="<?php echo base_url();?>/images/books.jpg" width="720px" height="140px" style="border-top-left-radius: 15px; border-top-right-radius: 10px;">
-		  <img class="p_absolute" src="<?php echo base_url();?>/images/van.jpg" width="720px" height="140px" style="border-top-left-radius: 15px; border-top-right-radius: 10px;">
+		  <br> <img class="p_absolute" src="<?php echo base_url();?>/images/books.jpg" width="250px" height="250px" style="border-top-left-radius: 15px; border-top-right-radius: 10px;">
+		  <img class="p_absolute" src="<?php echo base_url();?>/images/van.jpg" width="250px" height="250px" style="border-top-left-radius: 15px; border-top-right-radius: 10px;">
 	  </br>
 	  
 	  <br> 
