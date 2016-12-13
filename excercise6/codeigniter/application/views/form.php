@@ -6,23 +6,6 @@ alert("Welcome to Jhenina's Amazing Website!")
 <title> Form </title>
 </script>
 
-<script LANGUAGE="JavaScript">
-
-  
-var messages = new Array(6); 
-messages[0] = "";
-messages[1] = "Lucky Blue Smith";
-messages[2] = "Blue-- especially navy and tiffany blue";	   
-messages[3] = "My best friends are dane and therese <3";
-messages[4] = "My favorite genre is EDM! Nothing beats classic trap style and house electro.";
-messages[5] = "My favorite book is looking for alaska by John Green.";
-function messageReveal() {
-var messageindex = document.messageForm.messagePick.selectedIndex
-document.messageForm.messageField.value = messages[messageindex];
-}
-
-</script>
-
 </head>   
 
 	<style>

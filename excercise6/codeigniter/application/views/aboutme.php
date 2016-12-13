@@ -63,7 +63,6 @@ alert("About ME!")
 	}
 	</style>
 	<style>
-	<body background="<?php echo base_url();?>/images/white.png"> 
 		<head>
 			<center>
 			<img class="p_absolute" src="<?php echo base_url();?>/images/finalheader.png" width="720px" height="140px" style="border-top-left-radius: 15px; border-top-right-radius: 10px;">
@@ -83,7 +82,7 @@ alert("About ME!")
 	<br>
 	<br>
 	
-	<script LANGUAGE="JavaScript">
+<script>
 
 var messages = new Array(6); 
 messages[0] = "";
@@ -107,6 +106,8 @@ document.messageForm.messageField.value = messages[messageindex];
 	<br>
 			 <img class="p_absolute" src="<?php echo base_url();?>/images/arte.jpg" width="250px" height="250px" style="border-top-left-radius: 15px; border-top-right-radius: 10px; alt="Jhenina">
 			 <img class="p_absolute" src="<?php echo base_url();?>/images/selfie2.jpg" width="250px" height="250px" style="border-top-left-radius: 15px; border-top-right-radius: 10px; alt="Jhenina">
+			 <img class="p_absolute" src="<?php echo base_url();?>/images/shadow.jpg" width="250px" height="250px" style="border-top-left-radius: 15px; border-top-right-radius: 10px; alt="Jhenina">
+			 <img class="p_absolute" src="<?php echo base_url();?>/images/city.jpg" width="250px" height="250px" style="border-top-left-radius: 15px; border-top-right-radius: 10px; alt="Jhenina">
 				<p><h2 style="font-family: courier; font-size:20px; color:black; text align: center">JHENINA STA. CRUZ</h2> </p>
 				<p> <h2 style="font-family: courier; font-size:20px; color:black; text align: center">SINCE '98</h2> </p>
 		<a href="http://www.jheninamonique.wix.com/jhxnina" target="_blank">MY BLOG</a>
