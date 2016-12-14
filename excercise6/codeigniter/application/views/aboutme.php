@@ -102,10 +102,7 @@ document.messageForm.messageField.value = messages[messageindex];
 	<div class="city" id="aboutme"> 
 		<u> <h2 style="font-family: century; font-size:35px; color:black; text align: center">ABOUT ME </h2> </u>
 			<img class="p_absolute" src="<?php echo base_url();?>/images/selfie.jpg" width="250px" height="250px" style="border-top-left-radius: 15px; border-top-right-radius: 10px; alt="Jhenina">
-			
-	<br>
 			 <img class="p_absolute" src="<?php echo base_url();?>/images/arte.jpg" width="250px" height="250px" style="border-top-left-radius: 15px; border-top-right-radius: 10px; alt="Jhenina">
-			 <img class="p_absolute" src="<?php echo base_url();?>/images/selfie2.jpg" width="250px" height="250px" style="border-top-left-radius: 15px; border-top-right-radius: 10px; alt="Jhenina">
 			 <img class="p_absolute" src="<?php echo base_url();?>/images/shadow.jpg" width="250px" height="250px" style="border-top-left-radius: 15px; border-top-right-radius: 10px; alt="Jhenina">
 			 <img class="p_absolute" src="<?php echo base_url();?>/images/city.jpg" width="250px" height="250px" style="border-top-left-radius: 15px; border-top-right-radius: 10px; alt="Jhenina">
 				<p><h2 style="font-family: courier; font-size:20px; color:black; text align: center">JHENINA STA. CRUZ</h2> </p>
