@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Users_model extends CI_Model {
+class User_model extends CI_Model {
 	function __construct(){
 		parent::__construct();
 		$this->load->database();
@@ -37,6 +37,5 @@ class Users_model extends CI_Model {
 	public function delete_a_user($user_id){
 		$this->db->where('users.user_id', $user_id);
 		return $this->db->delete('users');
-	}
 }
 ?>

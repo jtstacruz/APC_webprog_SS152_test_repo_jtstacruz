@@ -87,7 +87,7 @@ alert("Welcome to Jhenina's Amazing Website!")
 <div class= "form">
 <h2>Form Validation </h2>
 <p><span class="error">* required field.</span></p>
-<form method="post" action="<?php echo base_url();?>index.php/users/view_records">  
+<form method="post" action="<?php echo base_url();?>index.php/users/insert_user_db">  
 	<table align= "center">
 		<tr align = "center">
 			<td>

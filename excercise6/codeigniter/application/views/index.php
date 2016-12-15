@@ -72,7 +72,7 @@ table td input{
  <div id="content">
     <table align="center">
     <tr>
-    <th colspan="5"><a href="form.php">-Add data here-</a></th>
+    <th colspan="5"><a href="<?php echo base_url('index.php/Users/add_form')?>">-Add data here-</a></th>
     </tr>
     <th>Name</th>
     <th>Email</th>
