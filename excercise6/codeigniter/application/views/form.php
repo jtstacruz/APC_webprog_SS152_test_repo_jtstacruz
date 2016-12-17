@@ -3,7 +3,7 @@
 <head>
 <script language="javascript" type="text/javascript">
 alert("Welcome to Jhenina's Amazing Website!")
-<title> Form </title>
+<title> Form Validation </title>
 </script>
 
 </head>   
@@ -57,6 +57,74 @@ alert("Welcome to Jhenina's Amazing Website!")
 			height:30px;
 			width:100%;
 			background:#999;
+		}
+	.box1{
+  			position: absolute;
+ 			 left: 30%;
+  			margin-top: 20px;
+  			background-color: #EEE7DA;
+  			box-shadow: 1px 2px 20px #272532;
+  			border-radius: 5px;
+  			font-family: georgia;
+  			width: 500px;
+  			height: 600px;
+	}
+	.error {color: #FF0000;}
+	
+		h2{
+  text-align: center;
+}
+	textarea{
+	  width: 300px;
+	  height: 70px;
+	  box-sizing: border-box;
+	  border: 2px solid #ccc;
+	  border-radius: 4px;
+	  font-size: 18px;
+	  background-color: white;
+	  padding: 12px 20px 12px 40px;
+}
+				.form {
+		  padding-left: 90px;
+		  padding-right: 60px;
+		  color: #5B5552;
+		}
+		p{
+		  padding-left: 40px;
+		  padding-right: 60px;
+		  color: #5B5552;
+		}
+		#formValid{
+		  color: #5B5552;
+		}
+		#hide{
+		  display: none;
+		}
+		input{
+		  margin-left: 25px;
+		}
+		#submit{
+			width: 200px;
+			height: 40px;
+		  position: absolute;
+		  margin-left: 210px;
+		}
+		input[type=text], select {
+		  width: 300px;
+		  height: 50px;
+		  padding: 12px 15px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 5px;
+		  box-sizing: border-box;
+		}
+		.para2_white{
+		  position: absolute;
+		  font-family: georgia;
+		  font-size: 14px;
+		  color: #EEE7DA;
+		  line-height: 0.5em
 		}
 	}
 	</style>
