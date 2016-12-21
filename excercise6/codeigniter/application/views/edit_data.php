@@ -134,6 +134,17 @@ body {
      .image1{
       z-index: -0.1px;
      }
+     .form_button{
+    background-color: #e7e7e7;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+     }
+
    }
 
 </style>
