@@ -13,7 +13,7 @@ alert("About ME!")
 
 	<style>
 		body {
-			background-image: url("white.png");
+			background-image: url("bg.jpg");
 			background-color: white;
 		}
 		h1 {
@@ -35,6 +35,7 @@ alert("About ME!")
 		   height: 800px;
 		   border: 5px solid black;
 		   text-align: center;
+		   background-color: white;
 		}
 		a:link, a:visited {
 			background-color: black;
