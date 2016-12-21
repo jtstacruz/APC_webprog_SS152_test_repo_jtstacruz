@@ -44,7 +44,8 @@ class Users extends CI_Controller {
     $this->load->helper('url');
     redirect('users/index', 'refresh');
   }
-  public function delete($user_id){
+    public function delete($user_id){
     $this->user_model->delete_a_user($user_id);
+    
   }
 }
