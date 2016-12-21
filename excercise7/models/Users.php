@@ -33,7 +33,7 @@ class Users extends \yii\db\ActiveRecord
             [['name', 'email', 'website', 'comment', 'gender'], 'required'],
             [['name', 'email', 'gender'], 'string', 'max' => 25],
             [['website'], 'string', 'max' => 45],
-            [['comment'], 'string', 'max' => 85],
+            [['comment'], 'string', 'max' => 50],
         ];
     }
 
