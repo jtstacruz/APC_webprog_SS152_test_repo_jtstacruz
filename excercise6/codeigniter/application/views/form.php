@@ -9,16 +9,16 @@ alert("Welcome to Jhenina's Amazing Website!")
 </head>   
 
 	<style>
-		body {
+			body {
 			background-image: url("white.png");
-			background-color: white;
+			background-color: #D5CFCA;
 		}
 		h1 {
 			color: black;
 			text-align: center;
 		}
 		p {
-			font-family: georgia;
+			font-family: aubrey;
 			font-size: 20px;
 		}
 		.active {
@@ -30,17 +30,19 @@ alert("Welcome to Jhenina's Amazing Website!")
 		   padding: 10px;
 		   max-width: 900px;
 		   height: 800px;
-		   border: 5px solid black;
+		   
 		   text-align: center;
 		}
 		a:link, a:visited {
-			background-color: black;
-			color: white;
-			padding: 14px 25px;
+			background-color: #FFE1CA;
+			color: black;
+			padding: 30px 40px;
 			text-align: center;
 			text-decoration: none;
 			display: inline-block;
-			font-family: georgia;
+			font-family: aubrey;
+			font-size: 20px;
+
 		}
 		a:hover, a:active {
 			background-color: black;
@@ -52,17 +54,21 @@ alert("Welcome to Jhenina's Amazing Website!")
 		}
 		#footer {
 			position:fixed;
-			left:0px;
+			left:0px; 
 			bottom:0px;
 			height:30px;
 			width:100%;
 			background:#999;
+
 		}
-	.box1{
+		.form {
+			padding-right: 190px;
+			padding-left: 200px;
+			text-align: center;
   			position: absolute;
- 			 left: 30%;
+  			float: center;
   			margin-top: 20px;
-  			background-color: #EEE7DA;
+  			background-color: #FFE1CA;
   			box-shadow: 1px 2px 20px #272532;
   			border-radius: 5px;
   			font-family: georgia;
@@ -70,25 +76,21 @@ alert("Welcome to Jhenina's Amazing Website!")
   			height: 600px;
 	}
 	.error {color: #FF0000;}
-	
-		h2{
-  text-align: center;
+		
+			h2{
+	  text-align: center;
+	}
+		textarea{
+		  width: 300px;
+		  height: 70px;
+		  box-sizing: border-box;
+		  border: 2px solid #ccc;
+		  border-radius: 4px;
+		  font-size: 18px;
+		  background-color: white;
+		  padding: 12px 20px 12px 40px;
 }
-	textarea{
-	  width: 300px;
-	  height: 70px;
-	  box-sizing: border-box;
-	  border: 2px solid #ccc;
-	  border-radius: 4px;
-	  font-size: 18px;
-	  background-color: white;
-	  padding: 12px 20px 12px 40px;
-}
-				.form {
-		  padding-left: 90px;
-		  padding-right: 60px;
-		  color: #5B5552;
-		}
+				
 		p{
 		  padding-left: 40px;
 		  padding-right: 60px;
@@ -126,13 +128,27 @@ alert("Welcome to Jhenina's Amazing Website!")
 		  color: #EEE7DA;
 		  line-height: 0.5em
 		}
-	}
+		.hi {
+		  position: relative;
+		  top: 40px;
+		  left: 10px;
+		 }
+		 .image2 { 
+		 z-index: 1;
+		  
+		 }
+}
 	</style>
 		<head>
 			<center>
-				<img class="p_absolute" src="<?php echo base_url();?>/images/finalheader.png" width="720px" height="140px" style="border-top-left-radius: 15px; border-top-right-radius: 10px;">
-			</center>
-		</head>
+			<div class = 'hi'>
+			<img class="image1" src="<?php echo base_url();?>/images/girlheader.png" width="400px" height="563px" style="border-top-left-radius: 15px; border-top-right-radius: 10px;">
+				<img class="image2" src="<?php echo base_url();?>/images/finalheader.png" width="720px" height="140px" style=" border-top-right-radius: 10px;">
+
+
+				
+
+		
 	<br>
 	<br>
 	
@@ -146,11 +162,13 @@ alert("Welcome to Jhenina's Amazing Website!")
 		</center>
 	<br>
 	<br>
-	
-		<center>
-		<div class="city">
-		<br>
+	</body>
+		</div>
+<center>
+<br>
+<br>
 
+<div class="city">
 
 <div class= "form">
 <h2>Form Validation </h2>
@@ -159,7 +177,7 @@ alert("Welcome to Jhenina's Amazing Website!")
 	<table align= "center">
 		<tr align = "center">
 			<td>
-			<a href = "index.php"> Back to Main Page </a></td>
+			<a href = ""> Back to Main Page </a></td>
 		</tr>
 		
 		
@@ -206,6 +224,7 @@ alert("Welcome to Jhenina's Amazing Website!")
         </td>
       </table> 
 </form>
+</center>
 </div>
 </body>
 </html>
