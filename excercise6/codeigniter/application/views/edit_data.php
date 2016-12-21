@@ -6,6 +6,7 @@
 <title>CRUD Operations With PHP and MySql - By Cleartuts</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
+<body>
 <style>
 
 body{
@@ -64,24 +65,28 @@ input[type=text], select {
   border-radius: 5px;
   box-sizing: border-box;
 }
+
+  }
 </style>
 <body>
 <center>
 
-<div id="header">
+
+<div class = "main">
  <div id="content">
     <label>Jhenina's Form Inputs</label>
     </div>
 </div>
 
-<div id="body">
  <div id="content">
 
  <?php foreach ($single_users as $users): ?>
     <form method="post" action="<?php echo base_url() . "index.php/users/update_users_id1"?>">
     <table align="center">
 	<td><a href = "index.php"> Back to Main Page </a></td>
-        
+  
+  <h3 id='form_head'>Codelgniter Form Submit </h3><br/>
+<div id="form_input">
 
 <tr>
 	<td>
@@ -120,6 +125,7 @@ input[type=text], select {
     
 	<tr>
     <td>
+    <div id="form_button">
 	<p><span class="error">* required field </span></p>
    <input type = "submit" name = "submit" value="Update"></td>
     </td>
