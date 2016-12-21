@@ -10,8 +10,7 @@ alert("Welcome to Jhenina's Amazing Website!")
 
 	<style>
 			body {
-			background-image: url("white.png");
-			background-color: #D5CFCA;
+			background-color: #FCEDEA;
 		}
 		h1 {
 			color: black;
@@ -30,9 +29,8 @@ alert("Welcome to Jhenina's Amazing Website!")
 		   padding: 10px;
 		   max-width: 900px;
 		   height: 800px;
-		   
-		   text-align: center;
-		}
+
+  		}
 		a:link, a:visited {
 			background-color: #FFE1CA;
 			color: black;
@@ -126,29 +124,23 @@ alert("Welcome to Jhenina's Amazing Website!")
 		  font-family: georgia;
 		  font-size: 14px;
 		  color: #EEE7DA;
-		  line-height: 0.5em
-		}
-		.hi {
-		  position: relative;
-		  top: 40px;
-		  left: 10px;
+		  line-height: 0.5em;
 		 }
-		 .image2 { 
-		 z-index: 1;
+		 .image1{
+		 	z-index: -0.1px;
 		  
 		 }
 }
 	</style>
 		<head>
+		<body background="<?php echo base_url();?>/images/bg2.png" style="opacity: 1.5;">
 			<center>
-			<div class = 'hi'>
-			<img class="image1" src="<?php echo base_url();?>/images/girlheader.png" width="400px" height="563px" style="border-top-left-radius: 15px; border-top-right-radius: 10px;">
-				<img class="image2" src="<?php echo base_url();?>/images/finalheader.png" width="720px" height="140px" style=" border-top-right-radius: 10px;">
+			<div style="padding-left:445px; padding-right:500px;">
+			<img class="image1" src="<?php echo base_url();?>/images/girlheader.png" width="400px" height="563px" style="padding-top:1%;position:absolute;top:0;align:center">
+				<img class="image2" src="<?php echo base_url();?>/images/finalheader.png" width="720px" height="140px" style=" padding-top:70%; position:relative; top:50">
 
-
-				
-
-		
+</div>
+	
 	<br>
 	<br>
 	
@@ -160,71 +152,76 @@ alert("Welcome to Jhenina's Amazing Website!")
 			<a href="<?php echo base_url('index.php/MyTrivias/index')?>"> Trivias</a>
 			<a href="form.php">PHP Form</a>
 		</center>
-	<br>
-	<br>
+
 	</body>
-		</div>
-<center>
-<br>
-<br>
+	</center>
+	</div>
 
-<div class="city">
-
-<div class= "form">
-<h2>Form Validation </h2>
-<p><span class="error">* required field.</span></p>
-<form method="post" action="<?php echo base_url();?>index.php/users/insert_user_db">  
-	<table align= "center">
-		<tr align = "center">
-			<td>
-			<a href = ""> Back to Main Page </a></td>
-		</tr>
-		
-		
+	<br>
+	<br>
 	
-		<tr>
+	
+	<center>
+	<br>
+	<br>
+
+	<div class="city">
+
+	<div class= "form">
+	<h2>Form Validation </h2>
+	<p><span class="error">* required field.</span></p>
+	<form method="post" action="<?php echo base_url();?>index.php/users/insert_user_db">  
+		<table align= "center">
+			<tr align = "center">
+				<td>
+				<a href = ""> View Form Records </a></td>
+			</tr>
+			
+			
+		
+			<tr>
+				<td>
+					<input type="text" name="name" placeholder = "Name" required">
+					<span class="error">* <br></span>
+				</td>
+			</tr>
+			
+			<tr>
+	          <td>
+	            <input type="text" name="email" placeholder = "E-mail" placeholder="Email" required>
+					<span class="error">* <br></span>
+	          </td>
+	        </tr>
+			
+			<tr>
+	          <td>
+	            <input type="text" name="website" placeholder = "Website" required>
+				<span class="error"> <br></span>
+	          </td>
+	        </tr>
+			
+			<tr>
+	          <td>
+	            <textarea name="comment" rows="5" cols="40"> </textarea>
+	          </td>
+	        </tr>
+			
+			<tr>
+				<td>
+					Gender: 
+					<input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
+					<input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
+					<span class="error">* <br></span> 
+				</td>
+			</tr>
+			
 			<td>
-				<input type="text" name="name" placeholder = "Name" required">
-				<span class="error">* <br></span>
-			</td>
-		</tr>
-		
-		<tr>
-          <td>
-            <input type="text" name="email" placeholder = "E-mail" placeholder="Email" required>
-				<span class="error">* <br></span>
-          </td>
-        </tr>
-		
-		<tr>
-          <td>
-            <input type="text" name="website" placeholder = "Website" required>
-			<span class="error"> <br></span>
-          </td>
-        </tr>
-		
-		<tr>
-          <td>
-            <textarea name="comment" rows="5" cols="40"> </textarea>
-          </td>
-        </tr>
-		
-		<tr>
-			<td>
-				Gender: 
-				<input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-				<input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-				<span class="error">* <br></span> 
-			</td>
-		</tr>
-		
-		<td>
-          <p><span class="error">* required field </span></p>
-          <button type="submit" name="submit" value="Submit"> SUBMIT </button>
-        </td>
-      </table> 
-</form>
-</center>
-</div>
-</body>
-</html>
+	          <p><span class="error">* required field </span></p>
+	          <button type="submit" name="submit" value="Submit"> SUBMIT </button>
+	        </td>
+	      </table> 
+	</form>
+	</center>
+	</div>
+	</body>
+	</html>
