@@ -202,7 +202,7 @@ function show_confirm(act, gotoid){
       <a href="<?php echo base_url('index.php/MyPassion/index')?>"> My Passions</a>
       <a href="<?php echo base_url('index.php/MyHobbies/index')?>"> My Hobbies </a>
       <a href="<?php echo base_url('index.php/MyTrivias/index')?>"> Trivias</a>
-      <a href="form.php">PHP Form</a>
+      <a href="Users/add_form">PHP Form</a>
     </center>
 
   </body>

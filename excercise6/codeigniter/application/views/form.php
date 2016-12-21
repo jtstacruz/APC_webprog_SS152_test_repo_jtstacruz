@@ -128,6 +128,16 @@ alert("Welcome to Jhenina's Amazing Website!")
 		 }
 		 .image1{
 		 	z-index: -0.1px;
+		 }
+		 .formbutton{
+		 	background-color: #e7e7e7;
+		    border: none;
+		    color: white;
+		    padding: 15px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
 		  
 		 }
 }
@@ -150,7 +160,7 @@ alert("Welcome to Jhenina's Amazing Website!")
 			<a href="<?php echo base_url('index.php/MyPassion/index')?>"> My Passions</a>
 			<a href="<?php echo base_url('index.php/MyHobbies/index')?>"> My Hobbies </a>
 			<a href="<?php echo base_url('index.php/MyTrivias/index')?>"> Trivias</a>
-			<a href="form.php">PHP Form</a>
+			<a href="add_form">PHP Form</a>
 		</center>
 
 	</body>
@@ -174,7 +184,7 @@ alert("Welcome to Jhenina's Amazing Website!")
 		<table align= "center">
 			<tr align = "center">
 				<td>
-				<a href = ""> View Form Records </a></td>
+				<a href="<?php echo base_url('index.php/Users')?>"> -View Records- </a>
 			</tr>
 			
 			
@@ -216,6 +226,7 @@ alert("Welcome to Jhenina's Amazing Website!")
 			</tr>
 			
 			<td>
+			<div id="formbutton">
 	          <p><span class="error">* required field </span></p>
 	          <button type="submit" name="submit" value="Submit"> SUBMIT </button>
 	        </td>
